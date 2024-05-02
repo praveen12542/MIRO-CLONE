@@ -17,6 +17,7 @@ import Link from "next/link";
 const font = Poppins({
   subsets: ["latin"],
   weight: ["600"],
+  preload: true,
 });
 
 const TabSeparator = () => {
