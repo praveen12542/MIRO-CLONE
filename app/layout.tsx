@@ -6,8 +6,9 @@ import { Toaster } from "@/components/ui/sonner";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Suspense } from "react";
 import { Loading } from "@/components/auth/loading";
-
+import { Poppins } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+import { Kalam } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Miro Clone",
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className ${Poppins.variable} ${Kalam.variable}}>
         <Suspense fallback={<Loading />}>
           <ConvexClientProvider>
             <Toaster />
