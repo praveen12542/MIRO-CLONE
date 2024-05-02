@@ -11,8 +11,10 @@ import { useSearchParams } from "next/navigation";
 
 const font = Poppins({
   subsets: ["latin"],
+  variable: "--font-Poppins",
   weight: ["600"],
   preload: true,
+
 });
 
 export const OrgSidebar = () => {

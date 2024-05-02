@@ -16,6 +16,7 @@ import Link from "next/link";
 
 const font = Poppins({
   subsets: ["latin"],
+  variable: "--font-Poppins",
   weight: ["600"],
   preload: true,
 });
