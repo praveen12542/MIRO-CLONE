@@ -18,7 +18,7 @@ const font = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
   weight: ["600"],
-  preload: true,
+  preload: false,
 });
 
 const TabSeparator = () => {

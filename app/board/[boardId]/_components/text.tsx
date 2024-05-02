@@ -4,7 +4,7 @@ import { useMutation } from "@/liveblocks.config";
 import { Kalam } from "next/font/google";
 import ContentEditable, { ContentEditableEvent } from "react-contenteditable";
 
-const font = Kalam({ subsets: ["latin"], variable: "--font-kalam", weight: "400",preload: true, });
+const font = Kalam({ subsets: ["latin"], variable: "--font-kalam", weight: "400",preload: false, });
 
 const calculateFontSize = (width: number, height: number) => {
   const maxFontSize = 96;
