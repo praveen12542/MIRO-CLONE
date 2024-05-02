@@ -1,5 +1,5 @@
 "use client";
-
+import { Poppins } from "next/font/google";
 import { Actions } from "@/components/actions";
 import { Hint } from "@/components/hint";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { useRenameModal } from "@/store/use-rename-modal";
 import { useQuery } from "convex/react";
 import { Menu } from "lucide-react";
-import { Poppins } from "next/font/google";
+
 import Image from "next/image";
 import Link from "next/link";
 

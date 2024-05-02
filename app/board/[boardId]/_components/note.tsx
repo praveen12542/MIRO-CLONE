@@ -1,7 +1,8 @@
+import { Kalam } from "next/font/google";
 import { cn, colorToCss, getContrastingTextColor } from "@/lib/utils";
 import { NoteLayer } from "@/types/canvas";
 import { useMutation } from "@/liveblocks.config";
-import { Kalam } from "next/font/google";
+
 import ContentEditable, { ContentEditableEvent } from "react-contenteditable";
 
 const font = Kalam({ subsets: ["latin"], weight: "400",  variable: "--font-kalam", });

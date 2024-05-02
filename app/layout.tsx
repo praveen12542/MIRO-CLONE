@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import type { Metadata } from "next";
+
+
 import { ConvexClientProvider } from "@/providers/convex-client-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Suspense } from "react";
 import { Loading } from "@/components/auth/loading";
-import { Poppins } from "next/font/google";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", });
 const font = Poppins({
   subsets: ["latin"],

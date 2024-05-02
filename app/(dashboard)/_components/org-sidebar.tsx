@@ -1,10 +1,10 @@
 "use client";
-
+import { Poppins } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { OrganizationSwitcher } from "@clerk/nextjs";
 import { LayoutDashboard, Star } from "lucide-react";
-import { Poppins } from "next/font/google";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
