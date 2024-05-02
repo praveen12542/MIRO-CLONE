@@ -11,7 +11,7 @@ import { useSearchParams } from "next/navigation";
 
 const font = Poppins({
   subsets: ["latin"],
-  variable: "--font-Poppins",
+  variable: "--font-poppins",
   weight: ["600"],
   preload: true,
 

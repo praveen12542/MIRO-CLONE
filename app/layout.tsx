@@ -6,9 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Suspense } from "react";
 import { Loading } from "@/components/auth/loading";
-import { Poppins } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-import { Kalam } from "next/font/google";
+const inter = Inter({ subsets: ["latin"], preload:true, variable: "--font-inter", });
 
 export const metadata: Metadata = {
   title: "Miro Clone",
