@@ -6,8 +6,14 @@ import { Toaster } from "@/components/ui/sonner";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Suspense } from "react";
 import { Loading } from "@/components/auth/loading";
+import { Poppins } from "next/font/google";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", });
+const font = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["600"],
 
+});
 export const metadata: Metadata = {
   title: "Miro Clone",
   description: "Miro Clone web app created with Nextjs.",
@@ -23,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={${inter.className}}>
+      <body className={' ${inter.className} ${font.className}'} >
         <Suspense fallback={<Loading />}>
           <ConvexClientProvider>
             <Toaster />
